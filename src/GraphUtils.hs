@@ -31,11 +31,12 @@ drawAxes x y size axesScale = Pictures $
   ] 
   ++ drawTicks x y size axesScale
 
--- Generate points for a function f(x)
+-- Generate points for a function f(x) or f(x^2) -> im surprised this works out of the box but why not I guess
 plotFunction :: Color -> (Float -> Float) -> Float -> Float -> Float -> Picture
 plotFunction funcColor func axesScale start end =
   let
     step = 0.1
     xs = [start, start+step .. end]
     pts = [(x, func x) | x <- xs]
-  in Color funcColor $ Line (scalePoints axesScale pts)
+  in Color funcColor $ Line (scalePoints axesScale pts) 
+
