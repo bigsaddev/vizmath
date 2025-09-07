@@ -10,6 +10,16 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_Vizmath */
+/* package Vizmath-0.1.0.0 */
+#ifndef VERSION_Vizmath
+#define VERSION_Vizmath "0.1.0.0"
+#endif /* VERSION_Vizmath */
+#ifndef MIN_VERSION_Vizmath
+#define MIN_VERSION_Vizmath(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  1 || \
+  (major1) == 0 && (major2) == 1 && (minor) <= 0)
+#endif /* MIN_VERSION_Vizmath */
 /* package base-4.18.3.0 */
 #ifndef VERSION_base
 #define VERSION_base "4.18.3.0"

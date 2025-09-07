@@ -16,5 +16,5 @@ main = display
   (Pictures
     [ drawAxes 0 0 20 globalScale -- x, y, size, scale
     , --Color red $ Line (scalePoints globalScale [(0, 0), (5, 5)])
-      plotFunction red f globalScale (-5) 5 
+      plotFunction red f globalScale (-5) 5
     ])
